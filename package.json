@@ -1,0 +1,17 @@
+{
+  "name": "glimp-convert",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Marc Eilhard",
+  "license": "MIT",
+  "scripts": {
+    "convert": "node GlimpConvert.js GlicemiaMisurazioni.csv.gz output.csv",
+    "build": "pkg GlimpConvert.js"
+  },
+  "dependencies": {
+    "csv-parse": "^2.5.0",
+    "gunzip-file": "^0.1.1",
+    "pkg": "^4.3.3",
+    "stream-transform": "^1.0.2"
+  }
+}
