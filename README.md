@@ -1,6 +1,6 @@
 # Summary
 
-This is a tiny script mainly for myself and other Diabetes patients that are using the freestyle libre with the Glimp App. It's converts the quite unreadable Glimp export on dropbox ('GlicemiaMisurazioni.csv.gz') to a compact CSV-File readable by e.g. Excel. It only contains the Date, Time and the Sugar value. Ideal for reports to the doctor.
+This is a tiny script mainly for myself and other Diabetes patients that are using the freestyle libre with the Glimp App. It converts the quite unreadable Glimp export on dropbox ('GlicemiaMisurazioni.csv.gz') to a compact CSV-File readable by e.g. Excel. It only contains the Date, Time and the Sugar value. Ideal for reports to the doctor.
 
 # Usage
 
