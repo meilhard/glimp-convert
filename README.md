@@ -7,7 +7,7 @@ This is a tiny script mainly for myself and other Diabetes patients that are usi
 You can either download the binary for your platform [here](https://github.com/meilhard/glimp-convert/releases) or build it from the sources like so:
 
 ```bash
-yarn build
+yarn && yarn build
 ```
 
 To convert a Glimp GZ-File to a readable CSV-File just use:
