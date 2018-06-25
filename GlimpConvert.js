@@ -44,17 +44,21 @@ const convert = file => {
     .pipe(output);
 };
 
-if (path.extname(file) === ".gz") {
-  console.log(`${file} is a gzip ...`);
-  unpacked = path.basename(file, ".gz");
-  gunzip(file, unpacked, err => {
-    if (err) {
-      console.log(err);
-    }
-    file = unpacked;
+const main = () => {
+  if (path.extname(file) === ".gz") {
+    console.log(`${file} is a gzip ...`);
+    unpacked = path.basename(file, ".gz");
+    gunzip(file, unpacked, err => {
+      if (err) {
+        console.log(err);
+      }
+      file = unpacked;
+      convert(file);
+    });
+  } else {
+    console.log(`${file} is not a gzip ...`);
     convert(file);
-  });
-} else {
-  console.log(`${file} is not a gzip ...`);
-  convert(file);
-}
+  }
+};
+
+main();
